@@ -2,7 +2,7 @@
 我有一些需要经常使用的项目模板，我不想重复的复制粘贴。所以我创建一个命令行脚本来帮我完成这件事情。
 
 # 使用
-- 安装命令行工具
+- 安装命令行工具`npm i @jacksion/nano-templte-cli -g`
 - 运行cli工具`nanotpl create <folder>`
 - 选择模板
 
