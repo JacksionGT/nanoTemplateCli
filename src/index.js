@@ -17,6 +17,14 @@ const templates = [
     },
     description: '使用tailwindcss cli编译产出index.css'
   },
+  {
+    name: 'koa-ts模板',
+    value: {
+      repo: 'JacksionGT/temlates',
+      folder: 'koa-ts' // 指定文件夹路径
+    },
+    description: '使用koa + typescript构建web应用和接口'
+  },
   // 可以添加更多模板配置
 ];
 
