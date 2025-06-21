@@ -1,0 +1,26 @@
+[
+    {
+        "name": "在html中使用tailwindcss的模板项目",
+        "value": {
+            "repo": "JacksionGT/temlates",
+            "folder": "tailwind-in-static-html"
+        },
+        "description": "使用tailwindcss cli编译产出index.css"
+    },
+    {
+        "name": "koa-ts模板",
+        "value": {
+            "repo": "JacksionGT/temlates",
+            "folder": "koa-ts"
+        },
+        "description": "使用koa + typescript构建web应用和接口"
+    },
+    {
+        "name": "react-tailwindcss模板",
+        "value": {
+            "repo": "JacksionGT/temlates",
+            "folder": "tailwind-vite-react"
+        },
+        "description": "使用vite创建的react项目，集成了tailwindcss"
+    }
+]

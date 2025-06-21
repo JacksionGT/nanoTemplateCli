@@ -7,28 +7,10 @@ import path from 'path';
 import { Octokit } from '@octokit/rest';
 import axios from 'axios';
 
-// 模板配置
-const templates = [
-  {
-    name: '在html中使用tailwindcss的模板项目',
-    value: {
-      repo: 'JacksionGT/temlates',
-      folder: 'tailwind-in-static-html' // 指定文件夹路径
-    },
-    description: '使用tailwindcss cli编译产出index.css'
-  },
-  {
-    name: 'koa-ts模板',
-    value: {
-      repo: 'JacksionGT/temlates',
-      folder: 'koa-ts' // 指定文件夹路径
-    },
-    description: '使用koa + typescript构建web应用和接口'
-  },
-  // 可以添加更多模板配置
-];
 
 export async function createProject(projectName) {
+  const config = fs.readFileSync(path.resolve(process.cwd(), 'src/templates.json'), 'utf-8');
+  const templates = JSON.parse(config) || [];
 
   const defaultPrompts = [
     {
