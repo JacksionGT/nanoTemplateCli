@@ -1,15 +1,18 @@
+import fs from 'fs';
+import path, { dirname }  from 'path';
+import { fileURLToPath } from 'url';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 import ora from 'ora';
 import { execa } from 'execa';
-import fs from 'fs';
-import path from 'path';
 import { Octokit } from '@octokit/rest';
 import axios from 'axios';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export async function createProject(projectName) {
-  const config = fs.readFileSync(path.resolve(process.cwd(), 'src/templates.json'), 'utf-8');
+  const config = fs.readFileSync(path.resolve(__dirname, 'templates.json'), 'utf-8');
   const templates = JSON.parse(config) || [];
 
   const defaultPrompts = [
