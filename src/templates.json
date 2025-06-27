@@ -22,5 +22,13 @@
             "folder": "tailwind-vite-react"
         },
         "description": "使用vite创建的react项目，集成了tailwindcss"
+    },
+    {
+        "name": "Electron-vite-tailwindcss模板",
+        "value": {
+            "repo": "JacksionGT/temlates",
+            "folder": "electron-vite-tailwind"
+        },
+        "description": "使用electron-vite创建的react项目，集成了tailwindcss和shadcn ui"
     }
 ]
